@@ -19,6 +19,7 @@ $(document).ready(function(){
     var $ee = $(".user-dropdown");
     $el.click(function(e){
         e.stopPropagation();
+        e.preventDefault();
         $(".user-dropdown").toggleClass('show');
     });
     $(document).on('click',function(e){
