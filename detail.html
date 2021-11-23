@@ -222,8 +222,8 @@
                                         <textarea name="" id="" cols="30" rows="1" placeholder="Type your comment here"></textarea>
                                         <button><img src="asset/images/icon/send.svg" alt=""></button>
                                     </form>
-                                    <ul class="comment-ct">
-                                        <li>
+                                    <ul class="comment-ct" id="listing4">
+                                        <li class="cmt-item">
                                             <div class="pic">
                                                 <img src="asset/images/bank/ava1.png" alt="">
                                             </div>
@@ -253,7 +253,7 @@
                                             </ul>
 
                                         </li>
-                                        <li>
+                                        <li class="cmt-item">
                                             <div class="pic">
                                                 <img src="asset/images/bank/ava2.png" alt="">
                                             </div>
@@ -266,7 +266,85 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li class="cmt-item">
+                                            <div class="pic">
+                                                <img src="asset/images/bank/ava3.png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="#">Pevita Pearly</a></h5> &bull; <span>07:48 AM</span>
+                                                <p>Very suitable for use in the midst of this covid 19 which makes me bored at, good games... <a href="#">Read More</a></p> 
+                                                <div class="bt-group">
+                                                    <a href="#"><img src="asset/images/icon/comment.svg" alt="">Reply</a>
+                                                    <a href="#"><img src="asset/images/icon/like.svg" alt="">Like</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cmt-item">
+                                            <div class="pic">
+                                                <img src="asset/images/bank/ava2.png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="#">Alexandria How</a></h5> &bull; <span>07:48 AM</span>
+                                                <p>Good games, very suitable for use in the midst of this covid 19 which makes me bored at... <a href="#">Read More</a></p> 
+                                                <div class="bt-group">
+                                                    <a href="#"><img src="asset/images/icon/comment.svg" alt="">Reply</a>
+                                                    <a href="#"><img src="asset/images/icon/like.svg" alt="">Like</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cmt-item">
+                                            <div class="pic">
+                                                <img src="asset/images/bank/ava3.png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="#">Pevita Pearly</a></h5> &bull; <span>07:48 AM</span>
+                                                <p>Very suitable for use in the midst of this covid 19 which makes me bored at, good games... <a href="#">Read More</a></p> 
+                                                <div class="bt-group">
+                                                    <a href="#"><img src="asset/images/icon/comment.svg" alt="">Reply</a>
+                                                    <a href="#"><img src="asset/images/icon/like.svg" alt="">Like</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cmt-item">
+                                            <div class="pic">
+                                                <img src="asset/images/bank/ava2.png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="#">Alexandria How</a></h5> &bull; <span>07:48 AM</span>
+                                                <p>Good games, very suitable for use in the midst of this covid 19 which makes me bored at... <a href="#">Read More</a></p> 
+                                                <div class="bt-group">
+                                                    <a href="#"><img src="asset/images/icon/comment.svg" alt="">Reply</a>
+                                                    <a href="#"><img src="asset/images/icon/like.svg" alt="">Like</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cmt-item">
+                                            <div class="pic">
+                                                <img src="asset/images/bank/ava3.png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="#">Pevita Pearly</a></h5> &bull; <span>07:48 AM</span>
+                                                <p>Very suitable for use in the midst of this covid 19 which makes me bored at, good games... <a href="#">Read More</a></p> 
+                                                <div class="bt-group">
+                                                    <a href="#"><img src="asset/images/icon/comment.svg" alt="">Reply</a>
+                                                    <a href="#"><img src="asset/images/icon/like.svg" alt="">Like</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cmt-item">
+                                            <div class="pic">
+                                                <img src="asset/images/bank/ava2.png" alt="">
+                                            </div>
+                                            <div class="text">
+                                                <h5><a href="#">Alexandria How</a></h5> &bull; <span>07:48 AM</span>
+                                                <p>Good games, very suitable for use in the midst of this covid 19 which makes me bored at... <a href="#">Read More</a></p> 
+                                                <div class="bt-group">
+                                                    <a href="#"><img src="asset/images/icon/comment.svg" alt="">Reply</a>
+                                                    <a href="#"><img src="asset/images/icon/like.svg" alt="">Like</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cmt-item">
                                             <div class="pic">
                                                 <img src="asset/images/bank/ava3.png" alt="">
                                             </div>
@@ -282,7 +360,7 @@
                                     </ul>
 
                                     <div class="cta-bt has-text-centered">
-                                        <a href="#" class="cta">View All Reviews</a>
+                                        <a href="#" id="more4" class="cta">View All Reviews</a>
                                     </div>
 
                                 </div>
@@ -556,7 +634,14 @@
     <script src="asset/js/main.js"></script>
     <script>
         $(document).ready(function(){
-
+            $("#listing4 .cmt-item").slice(0, 3).addClass("show");
+            $("#more4").on("click", function(e){
+                e.preventDefault();
+                $("#listing4 .cmt-item:hidden").slice(0, 2).slideDown();
+                if($("#listing4 .cmt-item:hidden").length == 0) {
+                $("#more4").text("No More Review").addClass("noContent");
+                }
+            });
         });
     </script>
 </body>

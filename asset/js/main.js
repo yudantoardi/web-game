@@ -12,4 +12,5 @@ $(document).ready(function(){
     $(".side-header .bt-more").click(function(){
         $(".header").toggleClass("show");
     });
+
 });

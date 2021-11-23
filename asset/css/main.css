@@ -218,6 +218,14 @@ figure,
     border-radius: 26px;
     -moz-border-radius: 26px;
     -webkit-border-radius: 26px;
+    transition: var(--anim);
+    -moz-transition: var(--anim);
+    -webkit-transition: var(--anim);
+}
+.cta:hover{
+    color: #fff;
+    background: rgb(140,88,250,1);
+    background: linear-gradient(270deg, rgba(140,88,250,1) 0%, rgba(103,88,250,1) 100%);;
 }
 
 section.banner{
@@ -747,6 +755,9 @@ form.comment button{
     margin-right: 10px;
     transform: translateY(2px);
 }
+.comment-ct li .replied{
+    padding-left: 55px;
+}
 .comment-ct li .replied li{
     border-bottom: none;
 }
@@ -832,6 +843,21 @@ form.comment button{
 }
 .g-content section.mid-ct .is-4{
     padding-left: 25px;
+}
+
+/*loadmore*/
+.listing .column,
+.comment-ct li.cmt-item{
+    display: none;
+}
+.comment-ct li.cmt-item.show{
+    display: block;
+}
+.listing .column.show{
+    display: flex;
+}
+.cta.noContent{
+    background: #262653;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
