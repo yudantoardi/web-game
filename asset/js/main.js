@@ -4,6 +4,8 @@
     });
 })(jQuery);
 
+
+
 $(document).ready(function(){
     $(".burger").click(function(){
         $(".side-menu").toggleClass("show");
@@ -11,6 +13,18 @@ $(document).ready(function(){
 
     $(".side-header .bt-more").click(function(){
         $(".header").toggleClass("show");
+    });
+
+    var $el = $(".user-pic a");
+    var $ee = $(".user-dropdown");
+    $el.click(function(e){
+        e.stopPropagation();
+        $(".user-dropdown").toggleClass('show');
+    });
+    $(document).on('click',function(e){
+        if(($(e.target) != $el) && ($ee.hasClass('show'))){
+            $ee.removeClass('show');
+        }
     });
 
 });

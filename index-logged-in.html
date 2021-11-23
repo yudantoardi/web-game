@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="stylesheet" href="asset/css/bulma.min.css">
+    <link rel="stylesheet" href="asset/css/jquery.mCustomScrollbar.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    
+    <div class="master">
+        <div class="sidebar">
+            <div class="side-header">
+                <div class="burger for-mobile">
+                    <img src="asset/images/icon/burger.svg" alt="">
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="asset/images/logo.png" alt="">
+                </a>
+                <div class="bt-more for-mobile">
+                    <img src="asset/images/icon/v-ellipsis.svg" alt="">
+                </div>
+                
+            </div>
+            <ul class="side-menu mCustomScrollbar" data-mcs-theme="dark">
+                <li class="active">
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/io.svg" alt=""></span> .IO
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/2-player.svg" alt=""></span> 2 Player
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/3d.svg" alt=""></span> 3D
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/actions.svg" alt=""></span> Actions
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/adventure.svg" alt=""></span> Adventure
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/arcade.svg" alt=""></span> Arcade
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/bejewaled.svg" alt=""></span> Bejewaled
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/classic.svg" alt=""></span> Classics
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/clicker.svg" alt=""></span> Clicker
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/cooking.svg" alt=""></span> Cooking
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/match-3.svg" alt=""></span> Match 3
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/bubble-shooter.svg" alt=""></span> Bubble Shooter
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/puzzle.svg" alt=""></span> Puzzle
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/quiz.svg" alt=""></span> Quiz
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/cards.svg" alt=""></span> Cards
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/girls.svg" alt=""></span> Girls
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/racing.svg" alt=""></span> Racing
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/sport.svg" alt=""></span> Sport
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/multiplayer.svg" alt=""></span> Multiplayer
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="g-icon"><img src="asset/images/icon/more.svg" alt=""></span> More
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="g-content">
+            <section class="header">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <form action="" class="src">
+                                <input type="text" placeholder="Search games">
+                                <button><img src="asset/images/icon/search.svg" alt=""></button>
+                            </form>
+                        </div>
+                        <div class="column is-8">
+                            <div class="user-nav">
+                                <div class="pic">
+                                    <div class="user-pic circle">
+                                        <a href="#"><img src="asset/images/bank/ava1.png" alt=""></a>
+                                    </div>
+                                    <div class="user-text for-mobile">
+                                        <h5><a href="#">Username</a></h5>
+                                        <i class="orange-text">2100xp</i>
+                                    </div>
+                                </div>
+                                <div class="user-dropdown">
+                                    <div class="item for-desktop">
+                                        <h5><a href="#">Username</a></h5>
+                                        <i>2100xp</i>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#">My Profile</a>
+                                        <a href="#">Edit Profile</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#" class="orange-txt">Log Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="main-menu">
+                                <li><a href="#">Sample Page</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="banner">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-12 has-text-centered">
+                            <div id="top-ads" class="ads">
+                                <div class="text">
+                                    <h3>CloudArea App</h3>
+                                    <p>Welcome the best game app</p>
+                                </div>
+                                <div class="bt-cta">
+                                    <a href="#" class="secondary-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="new-games">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-12">
+                            <div class="section-title">
+                                <h3>
+                                    <span class="g-icon"><img src="asset/images/icon/rocket.svg" alt=""></span> New Games
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-multiline listing" id="listing1">
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic4.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Plants vs Zombies</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic5.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Mario Bros Deluxe</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.1 (220 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic6.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Clash of Clan</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.2 (540 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic4.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Plants vs Zombies</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic5.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Mario Bros Deluxe</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.1 (220 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic6.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Clash of Clan</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.2 (540 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic4.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Plants vs Zombies</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic5.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Mario Bros Deluxe</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.1 (220 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-4">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-16">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic6.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Clash of Clan</a></h3>
+                                    <div class="info">
+                                        <div class="rating">
+                                            <span class="ico ico-star"></span> 4.2 (540 Reviews)
+                                        </div>
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns has-text-centered">
+                        <div class="column is-12">
+                            <a href="#" id="more1" class="cta mt-4">More Games</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="popular">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-12">
+                            <div class="section-title">
+                                <h3>
+                                    <span class="g-icon"><img src="asset/images/icon/fire.svg" alt=""></span> Popular Games
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-multiline listing" id="listing2">
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic7.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Super Monkey Ball</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 3.9 (140 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic8.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">World Shipsea</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic9.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Overcooked 2 Carnival</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.1 (170 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic9-1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Show Runner</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic7.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Super Monkey Ball</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 3.9 (140 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic8.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">World Shipsea</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic9.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Overcooked 2 Carnival</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.1 (170 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic9-1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Show Runner</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic7.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Super Monkey Ball</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 3.9 (140 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic8.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">World Shipsea</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic9.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Overcooked 2 Carnival</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.1 (170 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div class="g-card">
+                                <div class="pic">
+                                    <figure class="ratio ratio-75">
+                                        <a href="#">
+                                            <img src="asset/images/bank/pic9-1.jpg" alt="">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Show Runner</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <div class="bt-cta">
+                                        <a href="#" class="cta">Play Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns has-text-centered">
+                        <div class="column is-12">
+                            <a href="#" class="cta mt-4" id="more2">More Games</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recomendation">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-12">
+                            <div class="section-title">
+                                <h3>
+                                    <span class="g-icon"><img src="asset/images/icon/love.svg" alt=""></span> You May Like
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-multiline listing" id="listing3">
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic10.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Assasins Creed Origins</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic11.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Clash of Clan</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic12.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Chivalry House</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic13.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Plants vs Zombies</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic14.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">The Eternal Cylinder</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic15.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">The Robocop World</a></h3>
+                                    
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic10.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Assasins Creed Origins</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic11.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Clash of Clan</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic12.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Chivalry House</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic13.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Plants vs Zombies</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic14.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">The Eternal Cylinder</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic15.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">The Robocop World</a></h3>
+                                    
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic10.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Assasins Creed Origins</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic11.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Clash of Clan</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic12.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Chivalry House</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic13.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">Plants vs Zombies</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic14.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">The Eternal Cylinder</a></h3>
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="g-card-2">
+                                <div class="pic">
+                                    <figure class="ratio ratio-1">
+                                        <a href="#"><img src="asset/images/bank/pic15.jpg" alt=""></a>
+                                    </figure>
+                                </div>
+                                <div class="text">
+                                    <h3><a href="#">The Robocop World</a></h3>
+                                    
+                                    <div class="rating">
+                                        <span class="ico ico-star"></span> 4.0 (240 Reviews)
+                                    </div>
+                                
+                                    <a href="#" class="bt-play"><img src="asset/images/icon/play.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns has-text-centered">
+                        <div class="column is-12">
+                            <a href="#" class="cta mt-4" id="more3">More Games</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="banner">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-12">
+                            <div id="bottom-ads" class="ads">
+                                <div class="text">
+                                    <h3>Join us and play your<br>favourite games</h3>
+                                </div>
+                                <div class="bt-cta">
+                                    <a href="#" class="secondary-btn">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="container">
+                    <div class="columns pt-5 pb-5">
+                        <div class="column is-4">
+                            <a href="#" class="foot-logo"><img src="asset/images/logo.png" alt=""></a>
+                        </div>
+                        <div class="column is-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at leo felis. Donec ullamcorper vulputate lectus eu fringilla. Vivamus sed tortor placerat</p>
+                        </div>
+                        <div class="column is-4">
+                            <ul class="foot-nav">
+                                <li><a href="#">Sample Page</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-12 has-text-centered">
+                            <p class="copyright">Web Game - All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#listing1 .column").slice(0, 3).addClass("show");
+            $("#more1").on("click", function(e){
+                e.preventDefault();
+                $("#listing1 .column:hidden").slice(0, 3).slideDown();
+                if($("#listing1 .column:hidden").length == 0) {
+                $("#more1").text("No More Content").addClass("noContent");
+                }
+            });
+
+            $("#listing2 .column").slice(0, 4).addClass("show");
+            $("#more2").on("click", function(e){
+                e.preventDefault();
+                $("#listing2 .column:hidden").slice(0, 4).slideDown();
+                if($("#listing2 .column:hidden").length == 0) {
+                $("#more2").text("No More Content").addClass("noContent");
+                }
+            });
+
+            $("#listing3 .column").slice(0, 6).addClass("show");
+            $("#more3").on("click", function(e){
+                e.preventDefault();
+                $("#listing3 .column:hidden").slice(0, 4).slideDown();
+                if($("#listing3 .column:hidden").length == 0) {
+                $("#more3").text("No More Content").addClass("noContent");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

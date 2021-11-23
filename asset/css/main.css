@@ -202,7 +202,7 @@ figure,
     color: #fff;
     font-size: 14px;
 }
-.main-menu li:last-child{
+.main-menu li .cta{
     margin-left: 20px;
 }
 
@@ -349,6 +349,9 @@ section.banner{
     width: 100%;
     float: left;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .g-card .text h3 a{
     color: #fff;
@@ -860,6 +863,89 @@ form.comment button{
     background: #262653;
 }
 
+.for-desktop{
+    display: block;
+}
+.orange-txt,
+.user-dropdown .item i,
+.user-text i{
+    color: #FF7A41 !important;
+}
+.user-nav{
+    float: right;
+    margin-left: 20px;
+    position: relative;
+}
+.user-nav h5{
+    font-weight: 600;
+}
+.user-nav .user-pic{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.user-nav .user-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-dropdown{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 234px;
+    background: #262653;
+    z-index: 3;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--anim);
+    -moz-transition: var(--anim);
+    -webkit-transition: var(--anim);
+}
+.user-dropdown.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.user-dropdown .item{
+    padding: 15px;
+    width: 100%;
+    float: left;
+    border-bottom: 2px solid #40407a;
+    font-size: 14px;
+}
+.user-dropdown .item:last-child{
+    border-bottom: none;
+}
+.user-dropdown .item a{
+    width: 100%;
+    float: left;
+    color: #fff;
+}
+.user-dropdown .item:nth-child(2) a{
+    margin-bottom: 10px;
+}
+.user-dropdown .item:nth-child(2) a:last-child{
+    margin-bottom: 0;
+}
+.user-dropdown .item i,
+.user-text i{
+    font-size: 14px;
+}
+.user-text{
+    width: calc(100% - 50px);
+    padding-left: 15px;
+    float: left;
+}
+.user-text h5{
+    font-size: 14px;
+}
+.user-text h5 a{
+    color: #fff;
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     .header .columns{
         display: block;
@@ -873,6 +959,9 @@ form.comment button{
 @media only screen and (max-width: 1024px){
     .for-mobile{
         display: block;
+    }
+    .for-desktop{
+        display: none;
     }
     .master{
         overflow-x: hidden;
@@ -941,6 +1030,7 @@ form.comment button{
         transition: var(--anim);
         -moz-transition: var(--anim);
         -webkit-transition: var(--anim);
+        padding-top: 20px;
         padding-left: 30px;
         padding-right: 30px;
     }
@@ -961,13 +1051,13 @@ form.comment button{
     }
     .main-menu li{
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .main-menu li a{
         padding-right: 0;
         padding-left: 0;
     }
-    .main-menu li:last-child{
+    .main-menu li a.cta{
         margin-left: 0;
         margin-top: 20px;
     }
@@ -1113,6 +1203,35 @@ form.comment button{
     }
     .g-content section.mid-ct .is-4{
         padding-left: 10px;
+    }
+
+    .user-nav{
+        width: 100%;
+    }
+    .user-dropdown,
+    .user-dropdown.show{
+        opacity: 1;
+        pointer-events: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        float: left;
+        margin: 20px 0;
+        background: #313169;
+    }
+    .user-dropdown::before{
+        content: "";
+        width: 16px;
+        height: 16px;
+        background: #313169;
+        position: absolute;
+        top: 0;
+        left: 25px;
+        transform: translate(-50%,-50%) rotate(45deg);
+        -moz-transform: translate(-50%,-50%) rotate(45deg);
+        -webkit-transform: translate(-50%,-50%) rotate(45deg);
+        border-radius: 4px 0 0 0;
     }
 }
 
