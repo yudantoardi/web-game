@@ -28,4 +28,11 @@ $(document).ready(function(){
         }
     });
 
+    if(window.innerWidth < 1025){
+        console.log("true");
+        $($(".has-dropdown a img").parent()).click(function(){
+            $(".drop-ct").slideToggle(500);
+        });
+    }
+
 });
