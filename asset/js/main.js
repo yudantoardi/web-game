@@ -30,7 +30,8 @@ $(document).ready(function(){
 
     if(window.innerWidth < 1025){
         console.log("true");
-        $($(".has-dropdown a img").parent()).click(function(){
+        $($(".has-dropdown a img").parent()).click(function(d){
+            d.preventDefault();
             $(".drop-ct").slideToggle(500);
         });
     }
